@@ -13,7 +13,7 @@ PORIH = 50
 
 BAZA = 20
 Kp = 1.5
-Kd = 1
+Kd = 2.5
 e_pop = 0
 
 def obmezhyty(v):
