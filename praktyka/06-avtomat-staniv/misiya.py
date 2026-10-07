@@ -10,6 +10,7 @@ time.sleep(0.5)
 
 stan = "poshuk"
 vkhid = time.time()
+lichylnyk_vidmov = 0
 
 def perekhid(novyi):
     global stan, vkhid
@@ -17,7 +18,9 @@ def perekhid(novyi):
     stan = novyi
     vkhid = time.time()
     
-    if novyi == "rozvorot":
+    if novyi == "vidmova":
+        tank.off()
+    elif novyi == "rozvorot":
         gyro.reset()
 
 
@@ -34,6 +37,16 @@ while stan != "gotovo":
     elif stan == "pidhid":            
         tank.on(SpeedPercent(10), SpeedPercent(10))
         if d <= 15:
+            tank.off()
+            perekhid("rozvorot")
+        elif time.time() - vkhid > 3.5:
+            lichylnyk_vidmov += 1
+            print(f"Стіна дуже близько. (Спрацювань: {lichylnyk_vidmov})!!! ")
+            perekhid("vidmova")
+            
+    elif stan == "vidmova":
+        tank.on(SpeedPercent(-20), SpeedPercent(-20))
+        if time.time() - vkhid > 1.5: 
             tank.off()
             perekhid("rozvorot")
 
