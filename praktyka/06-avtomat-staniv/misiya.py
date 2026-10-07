@@ -30,15 +30,20 @@ while stan != "gotovo":
 
     if stan == "poshuk":              
         tank.on(SpeedPercent(30), SpeedPercent(30))
-        if d <= 20:
+        if d <= 5:
+            perekhid("vidmova")
+        elif d <= 20:
             perekhid("pidhid")
 
     elif stan == "pidhid":            
         tank.on(SpeedPercent(10), SpeedPercent(10))
-        if d <= 15:
+        if d <= 5:
+            perekhid("vidmova")
+        elif d <= 15:
             tank.off()
             perekhid("rozvorot")
         elif time.time() - vkhid > 3.5:
+            print("!!! Відмова: таймаут буксування!")
             perekhid("vidmova")
             
     elif stan == "vidmova":
