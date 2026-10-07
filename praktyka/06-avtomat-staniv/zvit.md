@@ -17,4 +17,5 @@
 8. Об'являти о завершенні своєї задачі
 
 Відео підтвердження виконанної роботи на сьогодня:
-[Відео](praktyka/06-avtomat-staniv/11c.mp4)
+https://github.com/user-attachments/assets/80030ff2-b105-47f0-90ae-6d619650805a
+
