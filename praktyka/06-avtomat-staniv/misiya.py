@@ -39,7 +39,6 @@ while stan != "gotovo":
             tank.off()
             perekhid("rozvorot")
         elif time.time() - vkhid > 3.5:
-            print(f"Стіна дуже близько!!! ")
             perekhid("vidmova")
             
     elif stan == "vidmova":
