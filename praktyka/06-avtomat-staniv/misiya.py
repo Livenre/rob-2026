@@ -10,7 +10,6 @@ time.sleep(0.5)
 
 stan = "poshuk"
 vkhid = time.time()
-lichylnyk_vidmov = 0
 
 def perekhid(novyi):
     global stan, vkhid
@@ -40,8 +39,7 @@ while stan != "gotovo":
             tank.off()
             perekhid("rozvorot")
         elif time.time() - vkhid > 3.5:
-            lichylnyk_vidmov += 1
-            print(f"Стіна дуже близько. (Спрацювань: {lichylnyk_vidmov})!!! ")
+            print(f"Стіна дуже близько!!! ")
             perekhid("vidmova")
             
     elif stan == "vidmova":
