@@ -74,7 +74,7 @@ rob-2026/
 - [X] `praktyka/05-rehulyator` — від «якщо» до пропорційного
 - [X] `praktyka/06-avtomat-staniv` — стани й переходи
 - [X] ⭐ **відео 30 с: робот виконує частину місії**
-- [ ] `praktyka/07-vlasna-karta` — власне середовище й критерій успіху
+- [X] `praktyka/07-vlasna-karta` — власне середовище й критерій успіху
 - [ ] `praktyka/08-zalizo` — Arduino в Tinkercad
 - [ ] **тиждень 9 — захист етапу** → `zakhyst/T09.md`
 
